@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    line-height: 10px;
+    background: #1F2937;
+    color: white;
+}
+.green{
+    color: #10B981;
+}
+
+.main{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.tagline{
+    font-size: 20px;
+
+}
+
+.hero-sec{
+    letter-spacing: -2.5%;
+}
+
+#gen-pass{
+    background-color: #10B981;
+    height: 42px;
+    width:191px;
+    fill: #10B981;
+    border: none;
+    border-radius: 6px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+#gen-pass:hover{
+    background-color: #0a6d4c;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.line-wt {
+    border: 1px solid;
+    border-color: #2F3E53;
+}
+
+#pass1, #pass2{
+    height: 39px;
+    width: 211px;
+    background-color: #273549;
+    border-radius: 6px;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: center;
+}
+.p1:hover, .p2:hover{
+    cursor: pointer;
+}
+.dynamic{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1072px) {
+    body{
+        font-size: 30px;
+    }
+    #pass1, #pass2{
+        font-size: 14px;
+        width: 100px;
+    }
+    .static{
+        height: auto;
+    }
+
+    .main{
+        width:100vw;
+        text-align: center;
+    }
+
+    .dynamic{
+        justify-content: space-around;
+    }
+}
